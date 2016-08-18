@@ -4,7 +4,8 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 
 import App from './components/app';
-import reducers from './reducers';
+//should be reducers/index instead of /reducers
+import reducers from './reducers/index';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
